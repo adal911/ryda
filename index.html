@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryda</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="/assets/js/header-nav.js"></script>
+</head>
+
+<body class="leadership-page">
+    <div class="main-header-hero">
+        <header>
+            <div class="container">
+                <div class="row d-flex align-center justify-between">
+                    <div class="box" style="flex-shrink: 0;">
+                        <div class="logo" style="max-height: 50px;">
+                            <a href="/">
+                                <img src="/assets/images/logo.png" alt="" height="85"
+                                    style="max-height: 100%; width: auto; margin-top: -15px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box mobile">
+                        <ul class="d-flex align-center" style="margin-left: 85px;">
+                            <li><a href="/">Leaderboard</a></li>
+                            <li><a href="/stream.html">Stream</a></li>
+                        </ul>
+                    </div>
+                    <div class="box mobile">
+                        <div class="btn"
+                            style="display: inline-block; background: linear-gradient(120deg, #FF7F00, #FF5500); padding: 8px 20px; border-radius: 30px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
+                            <a href="https://discord.gg/CKE4FHmY6X" target="_blank"
+                                style="color: white; font-size: 14px; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 600;">
+                                <i class="fa-brands fa-discord" style="font-size: 16px;"></i> SUPPORT
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box pc">
+                        <!-- The overlay -->
+                        <div id="myNav" class="overlay">
+
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                                <a href="/">Leaderboard</a>
+                                <a href="/stream.html">Stream</a>
+                                <div class="btn"
+                            style="display: inline-block; background: linear-gradient(120deg, #FF7F00, #FF5500); padding: 8px 20px; border-radius: 30px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
+                            <a href="https://discord.gg/CKE4FHmY6X" target="_blank"
+                                style="color: white; font-size: 14px; text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 600;">
+                                <i class="fa-brands fa-discord" style="font-size: 16px;"></i> SUPPORT
+                            </a>
+                        </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Use any element to open/show the overlay navigation menu -->
+                        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="/assets/images/stake-logo.svg" alt="stake" height="100">
+                        <h1>$5,000 <br /><span>Leaderboard</span></h1>
+                        <p>Use code <span>"RYDA"</span> to rise on the leaderboard.</p>
+                        <div class="btn-button"
+                            style="display: inline-block; background-color: #884211; padding: 8px 16px; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <a target="_blank" href="https://stake.us/?c=2bddc47a3b"
+                                style="color: white; font-size: 14px; text-decoration: none; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 6px; transition: background 0.3s, transform 0.3s;">
+                                PLAY NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="timer-package">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-1 center">
+                        <div class="img-apackage">
+                            <img src="/assets/images/stake.svg" alt="" height="50">
+                        </div>
+                        <p class="rank">2</p>
+                        <h1 id="user1_name">Test</h1>
+                        <div class="dollar-wagered">
+                            <p>WAGERED <br>
+                                <span id="user1_wager"><span> $ </span>----</span>
+                            </p>
+                        </div>
+                        <h2>$1,000</h2>
+                    </div>
+
+                    <div class="col-1 center">
+                        <div class="img-apackage">
+                            <img src="/assets/images/stake.svg" alt="" height="50">
+                        </div>
+                        <p class="rank">1</p>
+                        <h1 id="user0_name">Test</h1>
+                        <div class="dollar-wagered">
+                            <p>WAGERED <br>
+                                <span id="user0_wager"><span> $ </span>----</span>
+                            </p>
+                        </div>
+                        <h2>$2,250</h2>
+                    </div>
+
+                    <div class="col-1 center">
+                        <div class="img-apackage">
+                            <img src="/assets/images/stake.svg" alt="" height="50">
+                        </div>
+                        <p class="rank">3</p>
+                        <h1 id="user2_name">Test</h1>
+                        <div class="dollar-wagered">
+                            <p>WAGERED <br>
+                                <span id="user2_wager"><span> $ </span>----</span>
+                            </p>
+                        </div>
+                        <h2>$500</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="count-down">
+            <div class="container">
+                <div class="row">
+                    <div class="underline col-1"></div>
+                    <div class="countdown col-2">
+                        <div>
+                            <span id="days">00</span>
+                            <div class="label">Days</div>
+                        </div>
+                        <div>
+                            <span id="hours">00</span>
+                            <div class="label">Hours</div>
+                        </div>
+                        <div>
+                            <span id="minutes">00</span>
+                            <div class="label">Minutes</div>
+                        </div>
+                        <div>
+                            <span id="seconds">00</span>
+                            <div class="label">Seconds</div>
+                        </div>
+                    </div>
+                    <div class="underline col-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="participants">
+            <div class="container">
+                <div class="row-content">
+                    <div class="participants-header d-flex align-center justify-between" style="margin-bottom:8px;">
+                        <div class="left-group d-flex align-center">
+                            <span class="rank-label">RANK</span>
+                            <span class="user-label">USER</span>
+                        </div>
+                        <span class="wagered-label">WAGERED</span>
+                        <span class="prize-label">PRIZE</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">4</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user3_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user3_wager">$----</span>
+                        <span class="prize-value">$300</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">5</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user4_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user4_wager">$----</span>
+                        <span class="prize-value">$250</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">6</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user5_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user5_wager">$----</span>
+                        <span class="prize-value">$200</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">7</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user6_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user6_wager">$----</span>
+                        <span class="prize-value">$150</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">8</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user7_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user7_wager">$----</span>
+                        <span class="prize-value">$150</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">9</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user8_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user8_wager">$----</span>
+                        <span class="prize-value">$100</span>
+                    </div>
+                    <div class="box d-flex align-center justify-between">
+                        <div class="left-group d-flex align-center">
+                            <span class="numer">10</span>
+                            <span class="user-info d-flex align-center">
+                                <img src="/assets/images/stake.svg" alt="" class="img-fluid">
+                                <span id="user9_name">Test</span>
+                            </span>
+                        </div>
+                        <span class="wagered-value" id="user9_wager">$----</span>
+                        <span class="prize-value">$100</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-1">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="/assets/images/logo.png" alt="Logo" style="max-height: 100px; width: auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <h3>MAIN</h3>
+                        <ul>
+                            <li><a href="/">Leaderboard</a></li>
+                            <li><a href="/stream.html">Stream</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-1">
+                        <h3>SUPPORT</h3>
+                        <ul>
+                            <li><a target="_blank" href="">Discord Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h4>STAY CONNECTED</h4>
+                        <div class="icons d-flex align-center">
+                            <a target="_blank" href="kick.com/ryda"><img class="ico" src="/assets/images/kick-logo.svg" alt=""></a>
+                            <a target="_blank" href="x.com/rydatv"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a target="_blank" href="instagram.com/ryda"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="youtube.com/@ryda"><i class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank" href="tiktok.com/@ryda"><i class="fa-brands fa-tiktok"></i></a>
+                            <a target="_blank" href="twitch.tv/ryda"><i class="fa-brands fa-twitch"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="plus-18 d-flex align-center">
+                    <img src="/assets/images/18-plus.png" alt="18+" class="img-fluid">
+                    <p>We do not take responsibility for any losses from gambling in casinos and betting sites which are
+                        linked or
+                        promoted on our website(s). As a player, you are responsible for your bets.</p>
+                </div>
+                <p class="copy-right center">© 2025 <a href="/">Ryda</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

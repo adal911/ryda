@@ -1,0 +1,28 @@
+<svg width="276" height="330" viewBox="0 0 276 343" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Updated Background Gradient: Darker and richer shades -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c1401" />  <!-- Warm dark brown at the top -->
+      <stop offset="100%" stop-color="#1e1e1e" /> <!-- Rich black for the bottom -->
+    </linearGradient>
+
+    <!-- Glow Effect with subtle opacity to blend in -->
+    <radialGradient id="glow" cx="25%" cy="15%" r="70%">
+      <stop offset="0%" stop-color="#FF8C42" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FF8C42" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Card Clip Path -->
+    <clipPath id="cardClip">
+      <rect width="276" height="343" rx="20" />
+    </clipPath>
+  </defs>
+
+  <!-- Card Background with the updated gradient applied -->
+  <rect width="276" height="343" rx="20" fill="url(#cardGrad)" />
+
+  <!-- Glow Circle with a more subtle blend effect -->
+  <g clip-path="url(#cardClip)">
+    <circle cx="60" cy="40" r="90" fill="url(#glow)" />
+  </g>
+</svg>
