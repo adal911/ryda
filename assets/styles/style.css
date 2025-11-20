@@ -1309,7 +1309,7 @@ form .btn a {
 
 .timer-package .row .col-1 {
   min-height: 342.4px;
-  background: url(/assets/images/card-bg.svg) no-repeat;
+  background: url(./assets/images/card-bg.svg) no-repeat;
   position: relative;
   padding-top: 50px;
 }
@@ -2210,4 +2210,5 @@ html {
         font-size: 18px; /* Smaller text for smaller screens */
     }
 }
+
 
